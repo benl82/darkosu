@@ -1,4 +1,4 @@
-library(tidyverse)
+source("RPToOsu.R")
 
 # Version 1.
 # Not in .osu format.
@@ -102,7 +102,6 @@ gen1 <- function(n = 100, j = 12) {
   } else {
     w[[1]] <- rd(1:4, 2)
   }
-  # cat("start:", w[[1]], "\n\n")
   for (i in 2:n) {
     if (i > 2) {
       s1 <- p1(w[(i-2):(i-1)])
@@ -120,19 +119,9 @@ gen1 <- function(n = 100, j = 12) {
     } else {
       w[[i]] <- rd(s, 1)
     }
-    # cat("i:", i, "\n")
-    # cat("s1:", s1, "\n")
-    # cat("s2:", s2, "\n")
-    # cat("s", s, "\n")
-    # cat(w[[i]], "\n")
-    # cat("\n")
   }
-  for (i in w) {
-    for (k in i) {
-      cat(k, "")
-    }
-    cat("\n")
-  }
+  return(w)
 }
 
-gen1(n = 100, j = 6)
+# Just a test, this is for my file "Map of Scars"
+getosu(rp = gen1(n = 1000, j = 12), start = 316783, bpm = 115, snap = 12, keys = 4)
