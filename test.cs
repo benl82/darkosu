@@ -19,7 +19,9 @@ class Test {
         }
     }
     public static void Main() {
-        run_cmd("C:\\Users\\xoxze\\AppData\\Local\\Programs\\Python\\Python310\\python.exe", "C:\\Users\\xoxze\\Documents\\darkosu\\test.py");
+        string pyinst = "C:\\Users\\xoxze\\AppData\\Local\\Programs\\Python\\Python310\\python.exe";
+        string pypath = "C:\\Users\\xoxze\\Documents\\darkosu\\test.py";
+        run_cmd(pyinst, pypath);
         Console.WriteLine("hi from c#");
     }
 }
