@@ -1,8 +1,11 @@
 # Converts "RED POCKET"-type input lists to .osu file format.
 # Doesn't account for LNs (will come later)
 
-library(tidyverse)
+defaultW <- getOption("warn") 
+options(warn = -1) 
+suppressMessages(library(tidyverse))
 setwd(dirname(parent.frame(2)$ofile))
+options(warn = defaultW)
 
 getosu <- function(rp, start, bpm, snap, keys = 4, path = "getosu.txt") {
   # rp - the df of inputs. See the other .R files in darkosu for information on their output format.

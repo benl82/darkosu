@@ -1,5 +1,6 @@
 source("RPToOsu.R")
 source("utility.R")
+cat("hi from R\n") # test
 
 # Version 1.
 # Not in .osu format.
@@ -121,7 +122,7 @@ head(df)
 a <- point(df, 0)
 b <- point(df, 1)
 
-v1 <- c(1,2,3,4,1,2,3,2,3,4,1,2,4)
+v1 <- c(1,2,3,4,1,2,3,2,3,4,1,2,3)
 v2 <- c(0,0,0,0,1,1,1,2,2,2,3,3,3)
 rpt <- data.frame(cbind('c' = v1, 't' = v2))
 jackdensity(rpt)
