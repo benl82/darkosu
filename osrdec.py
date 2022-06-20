@@ -84,7 +84,7 @@ def frd(path):
         k += 23
         k = us(data, k)[1] # life bar skip
         times = uf("q", data, k)
-        print(hex(times))
+        # print(hex(times))
         time = datetime.min + timedelta(microseconds=times/10)
         time = time.replace(tzinfo=timezone.utc)
         k += 8
@@ -100,5 +100,5 @@ def srd(path):
         return (arrdelta, arrx, rng, rid)
 
 # r = Replay.from_path(pathg)
-kk = srd(pathf)
-print(kk[0])
+kk = srd(pathg)
+print(kk[3])
