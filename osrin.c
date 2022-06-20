@@ -41,11 +41,15 @@ void spit_string(unsigned char buffer[], int *k, int silent) {
 }
 void success(int b) { if (b == 0) { printf("No"); } else { printf("Yes"); } }
 
-void spitcon(char path[]) {
+int main(void) {
+    char path[] = "replay-mania_1443309_419638875.osr";
+    char pathf[] = "_hashinshin - Camellia - Shun no Shifudo o Ikashita Kare Fumi Paeria [Giant Pacific Octopus] (2020-05-13) OsuMania.osr";
+    char pathg[] = "replay-mania_3362200_497162661.osr";
+    
     FILE *fr;
     char *buffer;
     long filelen;
-    fr = fopen(path, "rb");
+    fr = fopen(pathg, "rb");
     fseek(fr, 0, SEEK_END);
     filelen = ftell(fr);
     rewind(fr);
@@ -97,11 +101,4 @@ void spitcon(char path[]) {
 
     free(buffer);
     free(judgments);
-}
-
-int main(void) {
-    char path[] = "replay-mania_1443309_419638875.osr";
-    char pathf[] = "_hashinshin - Camellia - Shun no Shifudo o Ikashita Kare Fumi Paeria [Giant Pacific Octopus] (2020-05-13) OsuMania.osr";
-    char pathg[] = "replay-mania_3362200_497162661.osr";
-    spitcon(pathg);
 }
