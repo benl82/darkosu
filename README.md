@@ -2,14 +2,14 @@
 ### Created by RED POCKET
 This repo aims to introduce math to osu!mania (and other rhythm games), and solve any questions someone could possibly have about the game.
 
-Uses osrparse - https://github.com/kszlim/osu-replay-parser. See this for details.
-
 ## Requirements
 Please install R version 4.1.3 or newer, Python 3, and .NET 4.0 or newer. 
 
 Recommended but not necessary to get an IDE capable of running R. If you want, download RStudio or VSCode, though everything can be done from the terminal.
 ## Current Features
 **Speed generator** - Generate Korea Streams to your heart's content.
+
+**Rudimentary replay parser** - Please run the executable file (written in C code).
 ## Future Features
 ### Other Map Generators
 **Archetype Map Generator** - Generate your favorite speed / jumpstream / handstream / chordjack maps.
