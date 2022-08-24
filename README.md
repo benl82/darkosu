@@ -2,6 +2,8 @@
 ### Created by RED POCKET
 This repo aims to introduce math to osu!mania (and other rhythm games), and solve any questions someone could possibly have about the game.
 
+**Read "torch time.ipynb" for the current ML model. Work In Progress**
+
 ## Requirements
 Please install R version 4.1.3 or newer, Python 3, and .NET 4.0 or newer. 
 
