@@ -1,5 +1,4 @@
-# Dark Osu
-### Created by RED POCKET
+# dosu
 This repo aims to introduce math to osu!mania (and other rhythm games), and solve any questions someone could possibly have about the game.
 
 **Read "torch time.ipynb" for the current ML model. Work In Progress**
